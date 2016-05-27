@@ -1,0 +1,12 @@
+PODS:
+  - SwiftGifOrigin (1.5.3)
+
+DEPENDENCIES:
+  - SwiftGifOrigin (~> 1.5.3)
+
+SPEC CHECKSUMS:
+  SwiftGifOrigin: 893ebcceabe215a00b607328b5322b4e228347e5
+
+PODFILE CHECKSUM: bfaddb9d8026edc570909d8ab2bd689aedfb0aac
+
+COCOAPODS: 1.0.0

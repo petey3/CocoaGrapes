@@ -13,6 +13,7 @@
 		074558371CF89EDC00399215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074558361CF89EDC00399215 /* Assets.xcassets */; };
 		0745583A1CF89EDC00399215 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074558381CF89EDC00399215 /* LaunchScreen.storyboard */; };
 		074558431CF8B42E00399215 /* dankgrapes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 074558421CF8B42E00399215 /* dankgrapes.gif */; };
+		AB25C1E1A194139EA86165C1 /* Pods_CocoaGrapes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F6A8E599C961E8D7B90DED /* Pods_CocoaGrapes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		074558391CF89EDC00399215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0745583B1CF89EDC00399215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		074558421CF8B42E00399215 /* dankgrapes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dankgrapes.gif; sourceTree = "<group>"; };
+		64AD58C576B1000894274851 /* Pods-CocoaGrapes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaGrapes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaGrapes/Pods-CocoaGrapes.debug.xcconfig"; sourceTree = "<group>"; };
+		A0758327CB4CCE7FBDABD16C /* Pods-CocoaGrapes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaGrapes.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaGrapes/Pods-CocoaGrapes.release.xcconfig"; sourceTree = "<group>"; };
+		A1F6A8E599C961E8D7B90DED /* Pods_CocoaGrapes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaGrapes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB25C1E1A194139EA86165C1 /* Pods_CocoaGrapes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				0745582E1CF89EDC00399215 /* CocoaGrapes */,
 				0745582D1CF89EDC00399215 /* Products */,
+				62184B3837F6D973EC3ED2DB /* Pods */,
+				1B36453CAD0111164FEB1A5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +82,23 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		1B36453CAD0111164FEB1A5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1F6A8E599C961E8D7B90DED /* Pods_CocoaGrapes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62184B3837F6D973EC3ED2DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64AD58C576B1000894274851 /* Pods-CocoaGrapes.debug.xcconfig */,
+				A0758327CB4CCE7FBDABD16C /* Pods-CocoaGrapes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0745583E1CF89EDC00399215 /* Build configuration list for PBXNativeTarget "CocoaGrapes" */;
 			buildPhases = (
+				D9C56F31F4021F5D73C409F0 /* 📦 Check Pods Manifest.lock */,
 				074558281CF89EDC00399215 /* Sources */,
 				074558291CF89EDC00399215 /* Frameworks */,
 				0745582A1CF89EDC00399215 /* Resources */,
+				6198A09A9C638EA2707805FC /* 📦 Embed Pods Frameworks */,
+				3AA9BA8A243CD2A2F7017F62 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,6 +168,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AA9BA8A243CD2A2F7017F62 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaGrapes/Pods-CocoaGrapes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6198A09A9C638EA2707805FC /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaGrapes/Pods-CocoaGrapes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9C56F31F4021F5D73C409F0 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		074558281CF89EDC00399215 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		0745583F1CF89EDC00399215 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64AD58C576B1000894274851 /* Pods-CocoaGrapes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CocoaGrapes/Info.plist;
@@ -271,6 +347,7 @@
 		};
 		074558401CF89EDC00399215 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0758327CB4CCE7FBDABD16C /* Pods-CocoaGrapes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CocoaGrapes/Info.plist;
@@ -300,6 +377,7 @@
 				074558401CF89EDC00399215 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
